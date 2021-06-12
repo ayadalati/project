@@ -1,0 +1,68 @@
+<div class="container">
+    
+    <!--
+        <h1 class="text-center">Register with bootstrap popup</h1>
+    -->
+    <button type="button" class="btn btn-danger" (click) ="show()">تنفيذ</button>
+     </div>
+     <!-- Creates the bootstrap modal where the image will appear -->
+  <section class="form1">
+  <div class="card text-center" >
+      <!--style="width:30rem;"-->
+  
+     <div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <!--
+        <h4 class="modal-title" id="myModalLabel">Register</h4>
+        -->
+      </div>
+      <div class="modal-body">
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                      <div class="form-row">
+                         
+                            <div class="form-group col-md-5 mb-3">
+                                  <label>الكمية المطلوبة</label>
+                                  <input id="need" type="number" formControlName="firstname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" />
+                                  <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+                                        <div *ngIf="f.firstname.errors.required">يجب إدخال الكمية المطلوبة</div>
+                                  </div>
+                               </div>
+                       
+                         
+                            <div class="form-group col-md-5 mb-3">
+                               <label>الكمية الحالية</label>
+                               <input type="text" value="5" formControlName="text" class="form-control" />
+                               
+                                   <!---
+                                     input proberty:[ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                    
+                                  <div *ngIf="f.email.errors.required"></div>
+                                  </div>
+                                   -->
+                                 
+                               
+                            </div>
+                         
+                         </div>
+                        
+             
+             <button type="submit" class="btn btn-danger" [disabled]="!compare()">قبول</button>
+             
+                <button type="button" class="btn btn-danger" data-dismiss="modal" (click) = "hide()">إلغاء</button>
+            
+            
+
+                </form>
+     
+    
+ </div>
+      
+    </div>
+  </div>
+  
+  </div>
+</div>
+</section>

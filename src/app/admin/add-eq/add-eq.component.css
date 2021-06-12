@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
+
+.form-control:focus {
+    border-color: #df4759;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+*
+ {
+    
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 1000;
+   /* background-image: url(../../../assets/k.jpg);
+  background-size: cover;
+  */
+}
+.card
+{
+    /*border: 2px solid 	#df4759;*/
+}
+.form-group 
+{
+    /*border: 2px solid rgb(206, 37, 141); */
+    margin:0px auto;
+    padding: 0px auto;
+   /* text-align: right;*/
+}
+.form1
+{
+    /*border: 2px solid red;*/
+  max-width:100% ;
+background-image: url(../../../assets/m.jpg);
+background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  
+  
+
+}
+input
+{
+
+  text-align: right;
+  
+}
+.btn
+{
+    margin-top: 1rem;
+    font-weight: 800;
+}
+.card-title
+{
+  margin-top: 1rem;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 1000;
+}
+.myfile
+{
+margin-top: 2rem;
+}
+.add-player-logo
+{
+  margin-top: 2rem;
+}
+
+#exampleFormControlTextarea1
+{
+    text-align: right;
+}
+

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
+
+*
+{
+    font-family: 'Tajawal', sans-serif;
+}
+.navbar
+{
+    /*background-color: #292c2f;*/
+}
+.carousel
+{
+   /* border: 2px solid red;*/
+    margin-bottom: 0px;
+    
+}
+.header
+{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 2.5rem;
+}
+.container
+{
+    
+    /*border: 2px solid red;*/
+    max-width: 90%;
+    text-align: center;
+
+}
+.info
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 53px;
+
+}
+
+.logo
+{
+    
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+.nav-item
+{
+    
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+}
+    
+
+
+.carousel-item {
+    
+font-size:20px;
+     height: 93vh;
+     min-height: 350px;
+     background: no-repeat center center scroll;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover
+ }
+ 
+ .navbar.scrolled {
+     background: rgb(34, 31, 31);
+     transition: background 500ms;
+     
+     
+
+
+ }
+ 
+ #mainNavbar {
+     padding-left: 50px;
+     padding-top: 100px
+ }
+ 
+ .navbar-dark .navbar-brand {
+    font-family: 'Tajawal', sans-serif;
+    /* font-family: 'Source Serif Pro', serif*/
+ }
+ 
+ .navbar-nav .nav-link {
+    font-family: 'Tajawal', sans-serif;
+ 
+      /* font-family: 'Source Serif Pro', serif*/
+ }
+ 
+ .display-4 {    font-family: 'Tajawal', sans-serif;
+ 
+       /* font-family: 'Source Serif Pro', serif*/
+ }
+ 
+ .lead {    font-family: 'Tajawal', sans-serif;
+ 
+       /* font-family: 'Source Serif Pro', serif*/
+ }
+ 
+ 
+ 

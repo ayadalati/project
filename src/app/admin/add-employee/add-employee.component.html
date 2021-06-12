@@ -1,0 +1,119 @@
+<section class="form1" >
+    <div class="card text-center" style="width:30rem;">
+      <div class="add-player-logo text-center">
+        <img src="../../../assets/logo.png" width="120px" heught="120px" >
+    </div>
+      <h1 class="card-title">
+        إضافة موظف
+      </h1>
+      
+      <div class="card-body">
+        
+    
+      <form #f = "ngForm" >
+      <div class="form-row has-error">
+        <div class="form-group col-md-4 mb-3">
+          <label for="LastName">الاسم الأخير</label>
+          <input type="text" class="form-control" id="LastName"
+          formControlName="LastName" name="LastName"
+          [(ngModel)] = "selectedPolicy.LastName"
+          >
+        </div>
+
+
+        <div  class="form-group col-md-4 mb-3">
+          <label for="FatherName">اسم الأب</label>
+          <input type="text" class="form-control" id="FatherName"
+          formControlName="FatherName" name="FatherName"
+          [(ngModel)] = "selectedPolicy.FatherName">
+        </div>
+
+
+        <div class="form-group col-md-4 mb-3">
+          <label for="FirstName">الاسم الأول</label>
+          <input type="text" class="form-control" id="FirstName"
+          formControlName="FirstName" name="FirstName"
+          [(ngModel)] = "selectedPolicy.FirstName"
+          >
+        </div>
+
+
+        
+
+
+
+
+      </div>
+    <!--************************************-->
+    <div class="form-row">
+      
+      <div class="form-group col-md-4 mb-3">
+        <label for="BirthDate">تاريخ الميلاد</label>
+          <input class="form-control" type="date" value="1999-08-19" id="BirthDate"
+          formControlName="BirthDate" name="BirthDate"
+          [(ngModel)] = "selectedPolicy.BirthDate">
+      </div> 
+    
+      <div class="form-group col-md-4 mb-3">
+        <label for="Phone">رقم الهاتف</label>
+        <input type="tel" class="form-control" id="Phone"
+        formControlName="Phone" name="Phone"
+        [(ngModel)] = "selectedPolicy.Phone">
+
+      </div>
+      
+      <div class="form-group col-md-4 mb-3">
+        <label for="MotherName">اسم الأم</label>
+        <input type="text" class="form-control" id="MotherName"
+        formControlName="MotherName" name="MotherName"
+        [(ngModel)] = "selectedPolicy.MotherName">
+      </div>
+    </div>
+    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    
+    <!--*************************************-->
+    <div class="form-row">
+      
+      
+
+      <div class="form-group col-md-4 mb-3  ">
+        <label for="Pass">كلمة المرور</label>
+        <input type="password" class="form-control" id="Pass" 
+        formControlName="Pass" name="Pass"
+        [(ngModel)] = "selectedPolicy.Pass">
+      </div>
+      
+<!----col-md-6 mb-3----->
+      <div class="form-group col-md-4 mb-3">
+        <label for="Id">رقم العضوية</label>
+        <input type="number" class="form-control" id="Id"
+        formControlName="Id" name="Id"
+        [(ngModel)] = "selectedPolicy.Id">
+      </div>
+
+      <div class="form-group col-md-4 mb-3">
+        <label for="Address">العنوان</label>
+        <input type="text" class="form-control" id="Address"
+        formControlName="Address" name="Address"
+        [(ngModel)] = "selectedPolicy.Address">
+      </div>
+
+
+
+      
+    </div>
+      
+    <button type="button"  class="btn btn-danger"  (click)="createOrUpdatePolicy(f)"
+    >
+     إضافةأو تعديل</button>
+
+        
+    </form>
+    
+    </div>
+    </div>
+
+
+
+
+    </section>
