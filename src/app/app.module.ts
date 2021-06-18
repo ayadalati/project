@@ -2,7 +2,7 @@ import { ApiService } from './api.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from  '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,7 +30,7 @@ import { AdsComponent } from './website/ads/ads.component';
 import { MytestComponent } from './website/mytest/mytest.component';
 //import { FormsModule } from '@angular/forms';
 //////////////////////////////////
-import {DatePipe} from '@angular/common';
+import { DatePipe } from '@angular/common';
 //import { HttpModule } from '@angular/http';
 //import { RoutingConfig } from "./app.routes";
 //import { NgxQRCodeModule } from 'ngx-qrcode2';
@@ -62,8 +62,8 @@ import {DatePipe} from '@angular/common';
     ChangePassComponent,
     AdsComponent,
     MytestComponent,
-    
-    
+
+
   ],
   imports: [
     BrowserModule,
@@ -74,11 +74,11 @@ import {DatePipe} from '@angular/common';
     //HttpModule,
     //NgxQRCodeModule,
     //RoutingConfig,
-    
-    
-   
 
-   
+
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
