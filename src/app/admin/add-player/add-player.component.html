@@ -14,19 +14,19 @@
       <div class="form-row has-error">
         <div class="form-group col-md-4 mb-3">
           <label for="inputfname">الاسم الأخير</label>
-          <input type="text" class="form-control" id="inputfname">
+          <input [(ngModel)]="player.LastName" type="text" class="form-control" id="inputfname">
         </div>
 
 
         <div  class="form-group col-md-4 mb-3">
           <label for="inputfname">اسم الأب</label>
-          <input type="text" class="form-control" id="inputfname">
+          <input [(ngModel)]="player.FatherName" type="text" class="form-control" id="inputfname">
         </div>
 
 
         <div class="form-group col-md-4 mb-3">
           <label for="inputfname">الاسم الأول</label>
-          <input type="text" class="form-control" id="inputfname">
+          <input [(ngModel)]="player.FirstName" type="text" class="form-control" id="inputfname">
         </div>
 
 
@@ -41,24 +41,24 @@
       
       <div class="form-group col-md-4 mb-3">
         <label for="example-date-input">تاريخ الميلاد</label>
-          <input class="form-control" type="date" value="1999-08-19" id="example-date-input">
+          <input [(ngModel)]="player.BirthDate" class="form-control" type="date" value="1999-08-19" id="example-date-input">
       </div> 
     
       <div class="form-group col-md-4 mb-3">
         <label for="inputlname">رقم الهاتف</label>
-        <input type="tel" class="form-control" id="inputlname">
+        <input [(ngModel)]="player.Phone" type="tel" class="form-control" id="inputlname">
       </div>
       
       <div class="form-group col-md-4 mb-3">
         <label for="inputfname">اسم الأم</label>
-        <input type="text" class="form-control" id="inputfname">
+        <input [(ngModel)]="player.MotherName" type="text" class="form-control" id="inputfname">
       </div>
     </div>
     <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
     <div class="form-row">
       <div class="form-group col-md-4 mb-3">
         <label for="inputState">زمرة الدم</label>
-        <select  id="inputState" class="form-control">
+        <select [(ngModel)]="player.Blood"  id="inputState" class="form-control">
           <option selected>AB</option>
           <option>A</option>
           <option>B</option>
@@ -67,11 +67,11 @@
       </div>
       <div class="form-group col-md-4 mb-3">
         <label for="inputfname">الوزن</label>
-        <input type="text" class="form-control" id="inputfname">
+        <input [(ngModel)]="player.Weight" type="text" class="form-control" id="inputfname">
       </div>
       <div class="form-group col-md-4 mb-3">
         <label for="inputfname">الطول</label>
-        <input type="text" class="form-control" id="inputfname">
+        <input [(ngModel)]="player.Length" type="text" class="form-control" id="inputfname">
       </div>
     </div>
     <!--************************************-->
@@ -80,13 +80,13 @@
       
       <div class="form-group col-md-4 mb-3">
         <label for="inputfname">العنوان</label>
-        <input type="text" class="form-control" id="inputfname">
+        <input [(ngModel)]="player.Address" type="text" class="form-control" id="inputfname">
       </div>
     
       
       <div class="form-group col-md-4 mb-3">
         <label for="inputState">مركز اللعب</label>
-        <select  id="inputState" class="form-control">
+        <select [(ngModel)]="player.PlayerPosition"  id="inputState" class="form-control">
           <option selected>الهجوم</option>
           <option>الدفاع</option>
           <option>قلب الدفاع</option>
@@ -98,7 +98,7 @@
     
       <div class="form-group col-md-4 mb-3">
         <label for="inputState">الفئة</label>
-        <select  id="inputState" class="form-control">
+        <select  [(ngModel)]="player.CatId" id="inputState" class="form-control">
           <option selected>شباب</option>
           <option>رجال</option>
         </select>
@@ -110,16 +110,16 @@
       <div class="form-group col-md-4 mb-3 custom-file myfile ">
         <label class="custom-file-label" for="customFile">ملف العقد</label>
         
-        <input type="file" class="form-control custom-file-input" id="inputfname">
+        <input [(ngModel)]="player.File" type="file" class="form-control custom-file-input" id="inputfname">
       </div>
     
       <div class="form-group col-md-4 mb-3">
-        <label for="example-date-input">تاريخ العقد</label>
-          <input class="form-control" type="date" value="2022-01-01" id="example-date-input">
+        <label for="example-date-input">تاريخ نهايةالعقد</label>
+          <input [(ngModel)]="player.EndDate" class="form-control" type="date" value="2022-01-01" id="example-date-input">
       </div>
       <div class="form-group col-md-4 mb-3">
         <label for="example-date-input">تاريخ التعيين</label>
-          <input class="form-control" type="date" value="2021-01-01" id="example-date-input">
+          <input [(ngModel)]="player.HirDate" class="form-control" type="date" value="2021-01-01" id="example-date-input">
       </div> 
       </div>
     <!--*************************************-->
@@ -129,18 +129,20 @@
 
       <div class="form-group col-md-6 mb-3  ">
         <label for="inputAddress">كلمة المرور</label>
-        <input type="password" class="form-control" id="inputAddress" >
+        <input [(ngModel)]="player.Pass" type="password" class="form-control" id="inputAddress" >
       </div>
 
       <div class="form-group col-md-6 mb-3">
         <label for="inputfname">الرقم الاتحادي</label>
-        <input type="text" class="form-control" id="inputfname">
+        <input [(ngModel)]="player.PlayerId" type="text" class="form-control" id="inputfname">
       </div>
       
     </div>
       
       
-    <button type="button" class="btn btn-danger">إضافة</button>
+    <button type="button" class="btn btn-danger"
+    (click)="onSubmit()"
+    >إضافة</button>
         
     
     </form>
