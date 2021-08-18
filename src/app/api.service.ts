@@ -10,6 +10,8 @@ export class ApiService {
   PHP_API_SERVER = 'http://localhost/Al-Wathba/Back-End/APIs/';
 
   loginUrl = 'http://localhost/Al-Wathba/Back-End/APIs/Accounts/login.php'
+  
+  
   memberData = 'dsfdsfdsfdsf'
 
   loginUser(data) { return this.http.post<any>(this.loginUrl, data) }
@@ -22,7 +24,16 @@ export class ApiService {
         observe: 'response'
       })
   }
-
+   ///////////////////////////////////////////////////////////////////
+    addplayerURL ='http://localhost/Al-Wathba/Back-End/APIs/Players/AddPlayer.php'
+  
+  
+  
+  
+  
+  
+  
+  ///////////////////////////////////////////////////////////////////////////////////
 
   /*
   readPolicies(): Observable<Policy[]>{
